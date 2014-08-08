@@ -436,7 +436,7 @@ class Value(_Element):
 
 
 class NameOrCall(_Element):
-    NAME = re.compile(r'([a-zA-Z0-9_]+)(.*)$', re.S)
+    NAME = re.compile(r'([a-z\-A-Z0-9_]+)(.*)$', re.S)
     parameters = None
     index = None
 
